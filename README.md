@@ -1,49 +1,30 @@
-# Jekyll Bootstrap 4 Boilerplate Theme + Docker
+# Hydejack Starter Kit
 
-[![Hexlet Ltd. logo](https://raw.githubusercontent.com/Hexlet/hexletguides.github.io/master/images/hexlet_logo128.png)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=jekyll-bootstrap4-docker)
+A quicker, cleaner way to get started blogging with [Hydejack](https://hydejack.com/).
 
-This repository is created and maintained by the team and the community of Hexlet, an educational project. [Read more about Hexlet (in Russian)](https://ru.hexlet.io/pages/about?utm_source=github&utm_medium=link&utm_campaign=jekyll-bootstrap4-docker).
-##
+## Quick Start
+### Running locally
+1. Clone repository (git users), or [download] and unzip.
+2. Open terminal, `cd` into root directory (where `_config.yml` is located)
+3. `bundle install` [^1]
+4. `bundle exec jekyll serve`
+5. Open <http://localhost:4000/hy-starter-kit/>
 
-Demo: https://hexlet-boilerplates.github.io/jekyll-bootstrap4-docker/
+### GitHub Pages
+1. Fork this repository.
+2. Go to **Settings**, rename repository to `<your github username>.github.io` (without the `<` `>`)
+3. Edit `_config.yml` (you can do this directly on GitHub)
+    1. Change `url` to `https://<your github username>.github.io` (without the `<` `>`)
+    2. Change `baseurl` to `''` (empty string)
+    3. **Commit changes**.
+4. Go to **Settings** again, look for **GitHub Pages**, set **Source** to **master branch**.
+5. Click **Save** and wait for GitHub to set up your new blag.
 
-This is a complete Dockerized Jekyll setup with a custom Bootstrap 4 theme. The setup is compatible with Github Pages: there are no unsupported plugins here.
+## What's next?
+* Open files and read the comments
+* Read the [docs](https://hydejack.com/docs/)
+* Buy the [PRO version](https://hydejack.com/download/) to get the project and resume layout, newsletter subscription box, custom forms, and more.
 
-You can ignore Docker stuff if you want and use Jekyll directly.
+[^1]: Requires Bundler. Install with `gem install bundler`.
 
-## Usage with Docker
-
-Building:
-
-```
-make build
-```
-
-Serving:
-
-```
-make serve
-```
-
-Then open [http://localhost:4000](http://localhost:4000).
-
-## Usage without Docker
-
-```bash
-# clone repo 
-git clone git@github.com:hexlet-boilerplates/jekyll-bootstrap4-docker.git
-
-# cd and install jekyll
-cd jekyll-bootstrap4-docker
-sudo gem install jekyll
-
-# start
-bundle exec jekyll serve
-```
-
-Then open [http://localhost:4000](http://localhost:4000).
-
-## Todo
-
-- [x] OG-tags support
-- [ ] Bootstrap SASS
+[download]: https://github.com/qwtel/hy-starter-kit/archive/master.zip
